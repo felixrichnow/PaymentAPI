@@ -1,9 +1,6 @@
 package Payment;
 
 public class UserInfo {
-    public UserInfo() {
-    }
-
     private String userId;
     private String street;
     private String city;
@@ -17,6 +14,9 @@ public class UserInfo {
     private String locale;
     private String firstName;
     private String lastName;
+
+    public UserInfo() {
+    }
 
     public UserInfo(String userId, String street, String city, String zip, String country, String email, String dob,
                     String mobile, Number balance, String balanceCy, String locale, String firstName, String lastName) {

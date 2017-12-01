@@ -1,15 +1,15 @@
 package Payment;
 
 public class TransferInfo {
-    public TransferInfo() {
-    }
-
     private String txId;
     private String userId;
     private String accountId;
     private String txPspAmount;
     private String merchantTxId;
     private String txTypeId;
+
+    public TransferInfo() {
+    }
 
     public TransferInfo(String txId, String userId, String accountId, String txPspAmount, String txTypeId, String merchantTxId) {
         this.txId = txId;

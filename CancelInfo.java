@@ -4,9 +4,26 @@ import java.util.UUID;
 
 public class CancelInfo {
 
+    private String authCode;
+    private String txAmount;
+    private String txAmountCy;
+    private String txId;
+    private Number txTypeId;
+    private String txName;
+    private String provider;
+    private String originTxId;
+    private UUID accountId;
+    private String maskedAccount;
+    private String statusCode;
+    private String pspStatusCode;
+    private String pspFee;
+    private String pspFeeCy;
+    private String pspFeeBase;
+    private String pspRefId;
+    private String pspStatusMessage;
+    private Object attributes;
     public CancelInfo() {
     }
-
     public CancelInfo(String authCode, String txAmount, String txAmountCy, String txId,
                       Number txTypeId, String txName, String provider, String originTxId,
                       UUID accountId, String maskedAccount, String statusCode, String pspStatusCode,
@@ -32,26 +49,6 @@ public class CancelInfo {
         this.pspStatusMessage = pspStatusMessage;
         this.attributes = attributes;
     }
-
-    private String authCode;
-    private String txAmount;
-    private String txAmountCy;
-    private String txId;
-    private Number txTypeId;
-    private String txName;
-    private String provider;
-    private String originTxId;
-    private UUID accountId;
-    private String maskedAccount;
-    private String statusCode;
-    private String pspStatusCode;
-    private String pspFee;
-    private String pspFeeCy;
-    private String pspFeeBase;
-    private String pspRefId;
-    private String pspStatusMessage;
-    private Object attributes;
-
 
     public String getAuthCode() {
         return authCode;

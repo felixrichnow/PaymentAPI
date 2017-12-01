@@ -1,13 +1,13 @@
 package Payment;
 
 public class AuthorResponse {
-    public AuthorResponse() {
-
-    }
-
     private String userId;
     private Boolean success;
     private String authCode;
+
+    public AuthorResponse() {
+
+    }
 
 
     public AuthorResponse(String userId, Boolean success, String authCode) {

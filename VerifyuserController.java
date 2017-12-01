@@ -10,11 +10,11 @@ import java.util.List;
 @RestController
 public class VerifyuserController {
 
-    public VerifyuserController() {
-    }
-
     @Autowired
     private UserService userService;
+
+    public VerifyuserController() {
+    }
 
     @RequestMapping(value = "/verify", method = RequestMethod.POST)
     public ResponseEntity<Object> verifyuser(@RequestBody Verifyuser verifyuser) {

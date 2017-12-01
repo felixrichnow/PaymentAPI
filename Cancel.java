@@ -3,16 +3,11 @@ package Payment;
 import java.util.UUID;
 
 public class Cancel {
-    public Cancel() {
-    }
-
     //Response Params (ONLY RETURNED)
     private String userId;
     private Boolean success;
     private String errCode;
     private String errMsg;
-
-
     //Req Params
     private String authCode;
     private String txAmount;
@@ -32,6 +27,9 @@ public class Cancel {
     private String pspRefId;
     private String pspStatusMessage;
     private Object attributes;
+
+    public Cancel() {
+    }
 
     public String getErrMsg() {
         return errMsg;

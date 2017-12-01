@@ -4,17 +4,11 @@ import java.util.UUID;
 
 public class Authorization {
 
-    //Empty constructor since it seems to be necessary
-    public Authorization() {
-    }
-
-
     //Response Params (ONLY RETURNED)
     private String userId;
     private Boolean success;
     private String authCode;
     private String errCode;
-
     //Req Params
     private String txAmount;
     private String txAmountCy;
@@ -33,6 +27,11 @@ public class Authorization {
     private String pspFeeBase;
     private String pspFeeBaseCy;
     private Object attributes;
+    private String errMsg;
+
+    //Empty constructor since it seems to be necessary
+    public Authorization() {
+    }
 
     public String getTxAmount() {
         return txAmount;
@@ -162,7 +161,6 @@ public class Authorization {
         this.attributes = attributes;
     }
 
-
     public String getErrMsg() {
         return errMsg;
     }
@@ -170,8 +168,6 @@ public class Authorization {
     public void setErrMsg(String errMsg) {
         this.errMsg = errMsg;
     }
-
-    private String errMsg;
 
     public String getUserId() {
         return userId;

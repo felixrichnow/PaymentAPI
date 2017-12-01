@@ -2,17 +2,16 @@ package Payment;
 
 public class TransferResponse {
 
+    private String userId;
+    private Boolean success;
+    private String txId;
+    private String merchantTxId;
     public TransferResponse(String userId, Boolean success, String txId, String merchantTxId) {
         this.userId = userId;
         this.success = success;
         this.txId = txId;
         this.merchantTxId = merchantTxId;
     }
-
-    private String userId;
-    private Boolean success;
-    private String txId;
-    private String merchantTxId;
 
     public String getUserId() {
         return userId;

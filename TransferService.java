@@ -8,9 +8,6 @@ import java.util.List;
 
 @Service
 public class TransferService {
-    public TransferService() {
-    }
-
     private List<TransferInfo> transfers = new ArrayList<>(Arrays.asList(
             new TransferInfo("2", "1234567",
                     "dd14cb2d-623f-46a9-9210-beb8d1f033c9",
@@ -18,6 +15,8 @@ public class TransferService {
 
     ));
 
+    public TransferService() {
+    }
 
     public List<TransferInfo> getTransfersList() {
         return transfers;

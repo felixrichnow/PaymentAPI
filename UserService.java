@@ -9,9 +9,6 @@ import java.util.List;
 @Service
 public class UserService {
 
-    public UserService() {
-    }
-
     private List<UserInfo> users = new ArrayList<>(Arrays.asList(
             new UserInfo("1234567", "Storgatan 1", "Storby", "11245", "SWE",
                     "kalle.andersson@gmail.com", "1981-01-01",
@@ -24,6 +21,8 @@ public class UserService {
 
     ));
 
+    public UserService() {
+    }
 
     public List<UserInfo> getUsers() {
         return users;

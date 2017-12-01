@@ -33,6 +33,7 @@ public class Transfer {
     private String pspRefId;
     private String pspStatusMessage;
     private Object attributes;
+
     public Transfer() {
     }
 

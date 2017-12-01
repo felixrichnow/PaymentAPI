@@ -3,17 +3,12 @@ package Payment;
 public class Verifyuser {
 
 
-    public Verifyuser() {
-
-    }
-
     //Req Params
     private String userCat;
     private String kycStatus;
     private Integer sex;
     private String firstName;
     private String lastName;
-
     //Response Paramss
     private String errMsg;
     private Boolean success;
@@ -30,6 +25,15 @@ public class Verifyuser {
     private Number balance;
     private String balanceCy;
     private String locale;
+
+    public Verifyuser() {
+
+    }
+
+    public Verifyuser(String sessionId, String userId) {
+        this.sessionId = sessionId;
+        this.userId = userId;
+    }
 
     public String getLocale() {
         return locale;
@@ -151,7 +155,6 @@ public class Verifyuser {
         this.balanceCy = balanceCy;
     }
 
-
     public String getSessionId() {
         return sessionId;
     }
@@ -167,7 +170,6 @@ public class Verifyuser {
     public void setUserId(String userId) {
         this.userId = userId;
     }
-
 
     public Boolean getSuccess() {
         return success;
@@ -191,11 +193,6 @@ public class Verifyuser {
 
     public void setErrMsg(String errMsg) {
         this.errMsg = errMsg;
-    }
-
-    public Verifyuser(String sessionId, String userId) {
-        this.sessionId = sessionId;
-        this.userId = userId;
     }
 
 }
